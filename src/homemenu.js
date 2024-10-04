@@ -15,7 +15,6 @@ function displayHome() {
     mainText.innerHTML = "At Restaurant Sedra, we believe that great food is about more than just flavor—it’s about experience. Nestled in the heart of Cologne, our restaurant offers a warm and inviting atmosphere where you can enjoy a meal with family and friends!"
 
 
-
     mainTextBorder.appendChild(headerHomePage)
     mainTextBorder.appendChild(mainText);
 

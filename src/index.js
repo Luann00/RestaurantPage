@@ -2,6 +2,8 @@ import "./styles.css";
 
 import displayHome from "./homemenu.js";
 import displayMenu from "./menu.js";
+import displayContact from "./contact.js";
+
 
 
 
@@ -28,5 +30,12 @@ menuButton.addEventListener("click", function () {
     content.innerHTML = ""
 
     displayMenu();
+});
+
+
+aboutButton.addEventListener("click", function () {
+    content.innerHTML = ""
+
+    displayContact();
 });
 
