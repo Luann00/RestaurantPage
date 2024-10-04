@@ -1,13 +1,22 @@
 /* styles.css */
 
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     background: url(./picture1.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
-    color:white
-
+    background-position: center top;
+    color: white;
+    background-attachment: fixed;
 }
+
 
 button {
     margin: 2%
@@ -17,7 +26,23 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 5px solid red;
 }
+
+button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+
 
 #content {
     display: flex;
@@ -26,17 +51,37 @@ nav {
 }
 
 #headerHomePage {
-    color:orange
+    color: orange
 }
 
-#mainTextBorder, #secondTextBorder {
+#mainTextBorder,
+#secondTextBorder,
+#hourText {
     border: 3px solid grey;
     border-radius: 25px;
-    padding: 15px;
+    padding: 5%;
     background-color: black;
-    width:50%;
-    font-family:Arial;
-    font-size:1.5vw;
-    margin: 2%
+    width: 50%;
+    font-family: Arial;
+    font-size: 1.5vw;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+#menuField {
+    border: 3px solid grey;
+    border-radius: 25px;
+    padding: 2%;
+    background-color: black;
+    width: 50%;
+    font-family: Arial;
+    font-size: 1.5vw;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
