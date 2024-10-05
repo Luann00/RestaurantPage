@@ -7,8 +7,13 @@ function displayContact() {
     const locationField = document.createElement('div');
     locationField.id = 'menuField'
 
-    const locationHeader = document.createElement('h1');
-    locationHeader.innerHTML = "Contact us"
+    const location2Field = document.createElement('div');
+    location2Field.id = 'menuField'
+
+    const location3Field = document.createElement('div');
+    location3Field.id = 'menuField'
+
+    
 
 
     const location = document.createElement('p');
@@ -20,9 +25,38 @@ function displayContact() {
     Phone: (555) 123-4567 <br>
     Email: johndoe@example.com`;
 
-locationField.appendChild(location);
+    const location2 = document.createElement('p');
+    location2.innerHTML = `
+    <strong>Jon Doe </strong> <br>
+    1234 Elm Street <br>
+    Springfield, IL 62701 <br>
+    USA <br>
+    Phone: (555) 123-4567 <br>
+    Email: johndoe@example.com`;
 
-content.appendChild(locationField);
+
+    const location3 = document.createElement('p');
+    location3.innerHTML = `
+    <strong>Jon Doe </strong> <br>
+    1234 Elm Street <br>
+    Springfield, IL 62701 <br>
+    USA <br>
+    Phone: (555) 123-4567 <br>
+    Email: johndoe@example.com`;
+
+
+    locationField.appendChild(location);
+
+    location2Field.appendChild(location2);
+
+    location3Field.appendChild(location3);
+
+
+
+    content.appendChild(locationField);
+    content.appendChild(location2Field);
+    content.appendChild(location3Field);
+
 
 }
 
